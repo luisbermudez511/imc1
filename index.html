@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <h1>indicador de IMC</h1>
+        <p>Calcula tu IMC</p>
+
+    </header>
+
+    <main class="container">
+        <section class="formulario">
+            <form id="forma">
+            <label for="peso">Ingresa tu peso en kg</label>
+            <input type="number" id="peso" placeholder="Ejem: 64.2" required step="any">
+            <label for="altura">ingresa tu altura en metros</label>
+            <input type="number" id="altura" placeholder="Ejem: 1.80" required step="any">
+            <input type="submit" value="convertir">
+        </form>
+        
+        <article class="resultado">
+            <h2>Tu indice de masa corporal es:</h2>
+            <p id="resumen"></p>
+            <img id="img" src="img/bajoPeso.png" alt="">
+        </article>
+        </section>
+        
+         
+    </main>
+
+
+    <script src="js/javaS.js"></script>
+</body>
+</html>
