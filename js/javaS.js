@@ -60,14 +60,9 @@ class ImcCalculator {
 document.getElementById('forma').addEventListener("submit", function(e) {
     e.preventDefault();
     const peso = document.getElementById('peso').value;
-    const altura = document.getElementById('altura').value; 
-    if (peso <= 0 || altura <= 0) {
-        document.getElementById('resumen').innerHTML = 'Por favor, introduce valores válidos (mayores a cero).';
-        document.getElementById("img").style.display = "none";
-        return;
-    }
-    
+    const altura = document.getElementById('altura').value;
     const objImc = new ImcCalculator(altura, peso); 
 
     document.getElementById('resumen').innerHTML = objImc.generarResumen(); 
+
 });
